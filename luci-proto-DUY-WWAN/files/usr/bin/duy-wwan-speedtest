@@ -1,0 +1,1 @@
+#!/bin/sh\nif [ -x /usr/bin/speedtest-cli ]; then\n    speedtest-cli --simple\nelse\n    curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 - --simple\nfi
